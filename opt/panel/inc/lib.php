@@ -537,7 +537,7 @@ region: ap \n
 log_level: debug \n
 log_format: logfmt \n
 log: ".$_POST['dir']."/ngrok.log \n
-");
+"); 
 	// Accept eula
 	file_put_contents($_POST['dir'].'/eula.txt','eula=TRUE');
 	// Copy spigot
@@ -545,10 +545,12 @@ log: ".$_POST['dir']."/ngrok.log \n
 		copy('serverbase/spigot-1.10.2.jar',$_POST['dir'].'/spigot-1.10.2.jar');
 	} else if ($_POST['version'] == '1.11.2') {
 		copy('serverbase/spigot-1.11.2.jar',$_POST['dir'].'/spigot-1.11.2.jar');
-	} else if ($_POST['version'] == '1.12.2') {
-		copy('serverbase/spigot-1.12.2.jar',$_POST['dir'].'/spigot-1.12.2.jar');
+	} else if ($_POST['version'] == '1.16.5') {
+		copy('serverbase/spigot-1.16.5.jar',$_POST['dir'].'/spigot-1.16.5.jar');
 	} else if ($_POST['version'] == '1.14.4') {
 		copy('serverbase/spigot-1.14.4.jar',$_POST['dir'].'/spigot-1.14.4.jar');
+	} else if ($_POST['version'] == '1.16.5') {
+		copy('serverbase/spigot-1.16.5.jar',$_POST['dir'].'/spigot-1.16.5.jar');
 	} else if ($_POST['version'] == '1.9.4') {
 		copy('serverbase/spigot-1.9.4-R0.1-SNAPSHOT-latest.jar',$_POST['dir'].'/spigot-1.9.4.jar');
 	} else if ($_POST['version'] == '1.8.8') {
@@ -557,7 +559,8 @@ log: ".$_POST['dir']."/ngrok.log \n
 		copy('serverbase/spigot-1.7.10-SNAPSHOT-b1657.jar',$_POST['dir'].'/spigot-1.7.10.jar');
 	} else if ($_POST['version'] == 'BC') {
 		copy('serverbase/BungeeCord.jar',$_POST['dir'].'/BungeeCord.jar');
-	}
+	} 
+	
 		
 }
 
